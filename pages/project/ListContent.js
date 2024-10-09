@@ -130,7 +130,7 @@ const ListContent = () => {
                         >
                           投票结束后，点击此按钮查看投票结果，将从链上返回一个累计获得选票数最大的地址
                             <br/>
-                            <Button theme='light' type='secondary' style={{ marginRight: 8, color:"rgba(var(--semi-green-1), 1)"}} onClick={getWinner}>Winner</Button>
+                            <Button theme='light' type='secondary' style={{ marginRight: 8, color:"rgba(var(--semi-light-green-5), 1)"}} onClick={getWinner}>Winner</Button>
                         </Card>
                     </div>
                     <div
@@ -150,7 +150,7 @@ const ListContent = () => {
                         >
                            点击此按钮，将会返回一个从链上读取的候选者地址集合，有助于您判断前端界面展示的候选地址的有效性和真实性
                             <br/>
-                            <Button theme='light' type='secondary' style={{ marginRight: 8 ,color:"rgba(var(--semi-violet-1), 1)"} } onClick={allCandidate} >Candidate</Button>
+                            <Button theme='light' type='secondary' style={{ marginRight: 8 ,color:"rgba(var(--semi-purple-4), 1)"} } onClick={allCandidate} >Candidate</Button>
                         </Card>
                     </div>
                     <div
@@ -169,7 +169,7 @@ const ListContent = () => {
                         >
                            点击此按钮查询投票是否开启，将从链上读取投票状态，若结果为TRUE则投票开启，反之关闭不可投票
                             <br/>
-                            <Button theme='light' type='secondary' style={{ marginRight: 8,color:"rgba(var(--semi-pink-1), 1)" }} onClick={getVoteStatus}>Status</Button>
+                            <Button theme='light' type='secondary' style={{ marginRight: 8,color:"rgba(var(--semi-pink-5), 1)" }} onClick={getVoteStatus}>Status</Button>
                         </Card>
                     </div>
                     </div>
