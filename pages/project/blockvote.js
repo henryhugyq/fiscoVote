@@ -26,7 +26,7 @@ import {
     IconMoon,
     IconGallery,
     IconShield,
-    IconArrowDown, IconGift, IconLock, IconUnlock, IconGlobeStroke, IconPaperclip, IconLink, IconUserCircle
+    IconArrowDown, IconGift, IconLock, IconUnlock, IconGlobeStroke, IconPaperclip, IconLink, IconUserCircle, IconQuit
 } from '@douyinfe/semi-icons';
 import "@douyinfe/semi-ui/dist/css/semi.css";
 
@@ -148,6 +148,12 @@ function blockvote() {
 
         // 返回首页
         window.location.href = 'http://localhost:3000';
+
+        Notification.info({
+            content: '成功退出',
+            duration: 3,
+            position: 'top'
+        });
     };
 
 
@@ -394,11 +400,11 @@ function blockvote() {
                                 <Dropdown
                                     render={
                                         <Dropdown.Menu>
-                                            <Dropdown.Item  style={{color:"rgba(var(--semi-blue-5), 1)"}} ><Text link={{href:'http://114.55.5.198:5100/#/home'}} icon={<IconLink />} underline>WeBase控制台</Text></Dropdown.Item>
-                                            <Dropdown.Item  style={{color:"rgba(var(--semi-blue-5), 1)"}} ><Text link={{href:'http://114.55.5.198:5100/#/home'}} icon={<IconLink />} underline>Fisco浏览器</Text></Dropdown.Item>
-                                            <Dropdown.Item  style={{color:"rgba(var(--semi-blue-5), 1)"}} ><Text link={{href:'http://114.55.5.198:5100/#/home'}} icon={<IconLink />} underline>Sepolia浏览器</Text></Dropdown.Item>
-                                            <Dropdown.Item  style={{color:"rgba(var(--semi-blue-5), 1)"}} ><Text link={{href:'http://114.55.5.198:5100/#/home'}} icon={<IconLink />} underline>VRF控制台</Text></Dropdown.Item>
-                                            <Dropdown.Item  style={{color:"rgba(var(--semi-blue-5), 1)"}} ><Text link={{href:'http://114.55.5.198:5100/#/home'}} icon={<IconLink />} underline>NFT浏览器</Text></Dropdown.Item>
+                                            <Dropdown.Item  style={{color:"rgba(var(--semi-blue-5), 1)"}} ><Text link={{href:'http://47.98.204.52:5002/WeBASE-Front/'}} icon={<IconLink />} underline>WeBase控制台</Text></Dropdown.Item>
+                                            <Dropdown.Item  style={{color:"rgba(var(--semi-blue-5), 1)"}} ><Text link={{href:'http://47.98.204.52:5100/'}} icon={<IconLink />} underline>Fisco浏览器</Text></Dropdown.Item>
+                                            <Dropdown.Item  style={{color:"rgba(var(--semi-blue-5), 1)"}} ><Text link={{href:'https://www.oklink.com/zh-hans/sepolia-test'}} icon={<IconLink />} underline>Sepolia浏览器</Text></Dropdown.Item>
+                                            <Dropdown.Item  style={{color:"rgba(var(--semi-blue-5), 1)"}} ><Text link={{href:'https://vrf.chain.link/'}} icon={<IconLink />} underline>VRF控制台</Text></Dropdown.Item>
+                                            <Dropdown.Item  style={{color:"rgba(var(--semi-blue-5), 1)"}} ><Text link={{href:'https://testnets.opensea.io/assets/sepolia/'}} icon={<IconLink />} underline>NFT浏览器</Text></Dropdown.Item>
                                         </Dropdown.Menu>
                                     }
 
@@ -459,7 +465,7 @@ function blockvote() {
                                                 <Input mode="password" defaultValue="123456"></Input>
 
                                             </Modal>
-                                            <Dropdown.Item  icon={<IconArrowDown />}style={{color:"rgba(var(--semi-blue-3), 1)"}} onClick={loginout}>退出登录</Dropdown.Item>
+                                            <Dropdown.Item  icon={<IconQuit />}style={{color:"rgba(var(--semi-blue-3), 1)"}} onClick={loginout}>退出登录</Dropdown.Item>
                                         </Dropdown.Menu>
                                     }
                                 >
