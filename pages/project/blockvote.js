@@ -147,7 +147,7 @@ function blockvote() {
         console.log('User logged out');
 
         // 返回首页
-        window.location.href = 'http://localhost:3000';
+        window.location.href = '/';
 
         Notification.info({
             content: '成功退出',
