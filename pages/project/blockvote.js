@@ -145,15 +145,15 @@ function blockvote() {
     const loginout = () => {
 
         console.log('User logged out');
-
-        // 返回首页
-        window.location.href = '/';
-
         Notification.info({
             content: '成功退出',
             duration: 3,
             position: 'top'
         });
+        setTimeout(function() {
+            window.location.href = '/';
+        }, 1000); 
+
     };
 
 
