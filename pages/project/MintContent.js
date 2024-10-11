@@ -36,7 +36,7 @@ const MintContent = () => {
         "event TokenMinted(address indexed owner, uint256 tokenId)",
     ];
 
-    const contractAddress = "0xe14fec4b6d55cb83e18e831593061f53af5744c7"
+    const contractAddress = "0x49550C38595681FBd27cE185D901E697c9b525A5"
     const style = {
         width: '32%',
         height: '350px',
