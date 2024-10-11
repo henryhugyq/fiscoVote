@@ -43,7 +43,7 @@ function Login() {
 
                 <div style={{ display: "flex" }}>
                     {visibleIndex >= 0 && (
-                        <h1 className="animate__animated animate__bounceInDown"style={{ margin: "0 15px" }}>Welcome</h1>
+                        <h1 className="animate__animated animate__bounceInDown"style={{ margin: "0 5px" }}>Welcome</h1>
                     )}
                     {visibleIndex >= 1 && (
                         <h1 className="animate__animated animate__bounceInDown" style={{ margin: "0 15px" }}>  to</h1>
