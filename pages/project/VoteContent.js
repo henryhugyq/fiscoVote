@@ -61,7 +61,7 @@ const VoteContent = () => {
     const address = ["0xc13fc67f57046a56252ef63ded46eb9540ef0292","0x34793fb8cb95f34c43502957fcdbaeb72fe00173","0x9f53c48348740c8978f7605a5b1117a7630f8d00"];
     const voteCandidate = async (address) => {
         // const address = document.getElementById('addressInput').value;
-        const response = await fetch('http://114.55.5.198:8080/api/vote', {
+        const response = await fetch('http://47.98.204.52:8080/api/vote', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
