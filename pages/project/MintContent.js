@@ -139,7 +139,7 @@ const MintContent = () => {
             if(!tokenId){
                 return ;
             }
-            const openseaLink = `https://testnets.opensea.io/assets/sepolia/${contractAddress2}/${tokenId}`;
+            const openseaLink = `https://testnets.opensea.io/assets/sepolia/${contractAddress}/${tokenId}`;
             setNftLink(openseaLink)
         }
         getLink()
